@@ -7,6 +7,11 @@ body{
     background:url("../img/bg.jpg") no-repeat center/cover;
     overflow:hidden;
 }
+/* bg Load */
+.Bgload1{display:none;background-image:url('../img/maomi-boom1.png');}
+.Bgload2{display:none;background-image:url('../img/maomi-boom2.png');}
+.Bgload3{display:none;background-image:url('../img/maomi-boom3.png');}
+.Bgload4{display:none;background-image:url('../img/maomi-boom4.png');}
 audio{display:none;}
 h1,h2,h3,h4,h5,h6,ol,ul,dl,div,span,section,i,p,b,sub,sup,input,form,table,button{font-family: "PrintGame";}
 #main{
@@ -21,6 +26,7 @@ h1,h2,h3,h4,h5,h6,ol,ul,dl,div,span,section,i,p,b,sub,sup,input,form,table,butto
 /*===================
     Menu Wrap
 ====================*/
+/* 预加载图片 */
 #main .menu-wrap{
     height:100%;
     opacity:0;

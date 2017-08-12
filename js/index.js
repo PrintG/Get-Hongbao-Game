@@ -438,10 +438,17 @@
         enemy : 6,  //敌人出现的几率 值越小出现的次数越多
     });
 
-    Game.exe();
-
-
-
+    window.onload = function(){
+        var Game = new PieGame({
+            RoleMoveSpeed : 8,  //人物移动速度
+            hongbaoSpeed : 150,    //红包生成速度 单位 ms
+            hongbaoDownSpeed : 5,  //红包下落速度(建议在10及以下)
+            score : 123,    //每次增加的分数
+            STime : null,   //用于储存开始时的时间
+            enemy : 6,  //敌人出现的几率 值越小出现的次数越多
+        });
+        Game.exe();
+    }
 
     //公用内部全局函数
         /*=== 事件的绑定和解绑 ===*/
