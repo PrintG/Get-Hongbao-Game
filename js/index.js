@@ -44,9 +44,7 @@
         this.obj.oMenu_option = Menu_Wrap.querySelectorAll(".game-menu .column");
 
         //把this储存到自己身上
-        each(this.obj.oMenu_option,function(t){
-            this.sourceThis = t;
-        }, this);
+
 
         //添加默认游戏信息
         this.Game_Info.score = 0;
@@ -56,7 +54,7 @@
 
         //开始游戏
         addEvent(this.obj.oMenu_option[0], "click", function(){
-            this.sourceThis.PieGameStart();
+            This.PieGameStart();
         });
         //生成排行榜
         addEvent(this.obj.oMenu_option[1], "click", function(){
@@ -453,7 +451,13 @@
     //公用内部全局函数
         /*=== 事件的绑定和解绑 ===*/
         function addEvent(obj, event, fn){
-            obj.attachEvent?obj.attachEvent("on"+event, fn):obj.addEventListener(event, fn, false);
+            if(obj.attachEvent){
+                obj.attachEvent("on"+event, function(){
+                    fn.apply(obj, arguments);
+                })
+            }else{
+                obj.addEventListener(event, fn, false);
+            }
         }
         function removeEvent(obj, event, fn){
             obj.detachEvent?obj.detachEvent("on"+event, fn):obj.removeEventListener(event, fn);
