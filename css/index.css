@@ -1,0 +1,174 @@
+@charset 'utf-8';
+
+html,body{
+    height:100%;
+}
+body{
+    background:url("../img/bg.jpg") no-repeat center/cover;
+    overflow:hidden;
+}
+audio{display:none;}
+h1,h2,h3,h4,h5,h6,ol,ul,dl,div,span,section,i,p,b,sub,sup,input,form,table,button{font-family: "PrintGame";}
+#main{
+    position:relative;
+    width:720px;
+    height:100%;
+    margin:auto;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    border-top:1px solid transparent;
+}
+/*===================
+    Menu Wrap
+====================*/
+#main .menu-wrap{
+    height:100%;
+    opacity:0;
+    transition:opacity 1.5s;
+}
+#main .menu-wrap.show{
+    opacity:1;
+}
+/*========== title ==========*/
+#main .menu-wrap .title{
+    color:#fff;
+    font-size:52px;
+    text-align:center;
+    padding-top:20px;
+}
+/*========== Game menu ==========*/
+#main .menu-wrap .game-menu{
+    width:300px;
+    margin:120px auto;
+    padding:10px 20px;
+    background:rgba(255,255,255,.3);
+    border:2px solid rgba(255,255,255,.5);
+    border-radius:5px;
+    color:#fff;
+    text-align:center;
+}
+#main .menu-wrap .game-menu .column{
+    margin:10px 0;
+    padding:5px 0;
+    cursor:pointer;
+}
+#main .menu-wrap .game-menu .column:active{
+    color: #0000FF
+}
+/*========== Role ==========*/
+#main .role{
+    position:absolute;
+    bottom:0;
+    left:330px;
+    width:66px;
+    height:89px;
+    background-image:url('../img/maomi.png');
+}
+/*========== Game Msg ==========*/
+#main .game-msg{
+    position:relative;
+    z-index:66;
+    color:#fff;
+    padding:10px 25px;
+}
+#main .game-msg p{
+    padding:3px 0;
+}
+#main .game-msg p span{
+    font-size:18px;
+}
+/*========== Hong Bao ==========*/
+#main .hongbao{
+    position:absolute;
+    top:0;
+    left:0;
+    width:40px;
+    height:44px;
+    background:url('../img/red.png') no-repeat center/cover;
+}
+#main .zhadan{
+    position:absolute;
+    top:0;
+    left;0;
+    width:38px;
+    height:50px;
+    background:url('../img/bird.png') no-repeat center/cover;
+}
+/*========== Game Over ==========*/
+#main .game-over{
+    width:500px;
+    margin:50px auto 0;
+    padding:20px 10px;
+    background-color:rgba(255,255,255,.6);
+    box-shadow:0 0 5px 2px #fff;
+}
+#main .game-over .title{
+    color:#62a9a5;
+    font-size:58px;
+    text-align:center;
+}
+#main .game-over p{
+    margin:10px auto;
+    font-size:20px;
+    text-align:center;
+    color:#0021ff;
+}
+#main .game-over p input{
+    border:none;
+    border-bottom:1px solid #666;
+    background-color:transparent;
+    color:#62a9a5;
+    text-indent:5px;
+    outline:none;
+}
+#main button{
+    display:block;
+    width:150px;
+    height:40px;
+    margin:50px auto 20px;
+    border:none;
+    background-color:#552477;
+    color:#fff;
+    font-size:30px;
+    outline:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+#main button:hover{
+    background-color:#60a;
+}
+#main button:active{
+    background-color:#8d14dd;
+}
+/*========== 排行榜 ==========*/
+#main .list{
+    width:600px;
+    padding:20px 0;
+    margin:50px auto 0;
+    background-color:rgba(255,255,255,0.9);
+    text-align:center;
+}
+#main .list .title{
+    font-size:38px;
+    color:#a69;
+}
+#main .list .title span{
+    font-size:16px;
+}
+#main .list table{
+    margin:10px auto 0;
+    border-color:#98a;
+}
+#main .list table tr.one{
+    color:#c96;
+}
+#main .list table td{
+    padding:10px;
+    font-size:18px;
+}
+#main .list button{
+    margin-top:20px;
+}
+
+
+

@@ -1,0 +1,9 @@
+@charset 'utf-8';
+
+@font-face{
+    font-family: "PrintGame";
+    src : url("../font/font.ttf");
+    src : url("../font/font.otf");
+    font-weight:normal;
+    font-style:normal;
+}
